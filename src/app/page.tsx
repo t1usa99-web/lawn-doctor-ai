@@ -2,7 +2,6 @@
 
 import { useState, useRef, useCallback } from 'react';
 import DiagnosisResult from '@/components/DiagnosisResult';
-import Header from '@/components/Header';
 
 interface DiagnosisData {
   diagnosis: string;
@@ -99,8 +98,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      <Header />
-
       <div className="max-w-3xl mx-auto px-4 py-8">
         {/* Hero */}
         <div className="text-center mb-10">
@@ -227,11 +224,6 @@ export default function Home() {
         )}
       </div>
 
-      {/* Footer */}
-      <footer className="text-center py-8 text-gray-400 text-sm">
-        <p>Lawn Doctor AI &mdash; Powered by Claude Vision</p>
-        <p className="mt-1">For informational purposes only. Consult a lawn care professional for severe issues.</p>
-      </footer>
     </main>
   );
 }
